@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jayul Patel — Web Developer resume portfolio. Diploma in IT, passionate about web development and UI design.">
+  <title>Jayul Patel | Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Animated particle background -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Sticky Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>JP<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg-shape hero-bg-shape--1"></div>
+      <div class="hero-bg-shape hero-bg-shape--2"></div>
+      <div class="container hero-grid">
+        <div class="hero-image-wrapper reveal">
+          <div class="hero-image-ring">
+            <img src="assets/images/profile.png" alt="Jayul Patel — Web Developer" class="hero-image">
+          </div>
+          <div class="hero-image-glow"></div>
+        </div>
+        <div class="hero-content reveal">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Jayul Patel</h1>
+          <div class="hero-role-wrapper">
+            <span class="hero-role-prefix">&gt;</span>
+            <span id="typing-text" class="hero-role"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-intro">
+            A passionate fresher web developer crafting clean, responsive, and user-friendly
+            digital experiences. I blend creative UI design with solid front-end fundamentals
+            to build websites that look premium and perform flawlessly.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary" id="download-cv">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about section">
+        <span class="scroll-indicator-dot"></span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">01. About</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-grid">
+          <div class="glass-card about-card reveal">
+            <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Education</h3>
+            <p>Diploma in Information Technology</p>
+          </div>
+          <div class="glass-card about-card reveal">
+            <div class="about-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <h3>Location</h3>
+            <p>Idar, Gujarat, India</p>
+          </div>
+          <div class="glass-card about-card about-card--wide reveal">
+            <div class="about-icon"><i class="fas fa-code"></i></div>
+            <h3>Passion</h3>
+            <p>
+              Passionate about web development and UI design. I love turning ideas into
+              elegant, accessible interfaces using HTML, CSS, and JavaScript — always learning,
+              always building.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">02. Skills</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="glass-card skill-card reveal">
+            <div class="skill-header">
+              <i class="fab fa-html5 skill-icon"></i>
+              <span class="skill-name">HTML</span>
+              <span class="skill-percent" data-target="90">0%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="glass-card skill-card reveal">
+            <div class="skill-header">
+              <i class="fab fa-css3-alt skill-icon"></i>
+              <span class="skill-name">CSS</span>
+              <span class="skill-percent" data-target="85">0%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="glass-card skill-card reveal">
+            <div class="skill-header">
+              <i class="fab fa-js skill-icon"></i>
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-percent" data-target="80">0%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="glass-card skill-card reveal">
+            <div class="skill-header">
+              <i class="fas fa-mobile-alt skill-icon"></i>
+              <span class="skill-name">Responsive Design</span>
+              <span class="skill-percent" data-target="88">0%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="glass-card skill-card reveal">
+            <div class="skill-header">
+              <i class="fab fa-github skill-icon"></i>
+              <span class="skill-name">GitHub</span>
+              <span class="skill-percent" data-target="75">0%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+          <div class="glass-card skill-card reveal">
+            <div class="skill-header">
+              <i class="fas fa-palette skill-icon"></i>
+              <span class="skill-name">UI/UX Basics</span>
+              <span class="skill-percent" data-target="82">0%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION TIMELINE ==================== -->
+    <section id="education" class="education section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">03. Education</span>
+          <h2 class="section-title">Education Timeline</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-date">2022 — 2025</span>
+              <h3>Diploma in Information Technology</h3>
+              <p>
+                Completed a comprehensive IT diploma covering programming fundamentals,
+                web technologies, database management, and software development practices.
+              </p>
+              <div class="timeline-tags">
+                <span>Web Development</span>
+                <span>Programming</span>
+                <span>Database</span>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <span class="timeline-date">Ongoing</span>
+              <h3>Self-Directed Learning</h3>
+              <p>
+                Continuously upskilling through online resources, personal projects, and
+                open-source contributions in front-end development and UI design.
+              </p>
+              <div class="timeline-tags">
+                <span>HTML/CSS/JS</span>
+                <span>UI Design</span>
+                <span>Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">04. Projects</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-card-inner glass-card">
+              <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+              <h3>Portfolio Website</h3>
+              <p>
+                A personal portfolio showcasing projects, skills, and contact information
+                with a modern dark theme and smooth animations.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Portfolio"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link" aria-label="Portfolio GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card-inner glass-card">
+              <div class="project-icon"><i class="fas fa-file-alt"></i></div>
+              <h3>Resume Website</h3>
+              <p>
+                This single-page resume site — built with glassmorphism, particle effects,
+                and scroll-reveal animations for a premium developer presence.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Resume"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link" aria-label="Resume GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card-inner glass-card">
+              <div class="project-icon"><i class="fas fa-rocket"></i></div>
+              <h3>Landing Page Design</h3>
+              <p>
+                A sleek product landing page with hero sections, feature cards, and
+                call-to-action blocks — fully responsive and conversion-focused.
+              </p>
+              <div class="project-tech">
+                <span>HTML</span><span>CSS</span><span>Responsive</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View Landing Page"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link" aria-label="Landing Page GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">05. Experience</span>
+          <h2 class="section-title">Work Experience</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="experience-grid">
+          <div class="glass-card experience-card reveal">
+            <div class="experience-badge">Current</div>
+            <h3>Fresher</h3>
+            <p class="experience-role">Web Developer (Entry Level)</p>
+            <p>
+              Recent IT diploma graduate eager to contribute to real-world projects.
+              Strong foundation in front-end development with a portfolio of personal
+              projects demonstrating HTML, CSS, and JavaScript proficiency.
+            </p>
+          </div>
+          <div class="glass-card experience-card experience-card--placeholder reveal">
+            <div class="experience-badge experience-badge--intern">Internship</div>
+            <h3>Internship Placeholder</h3>
+            <p class="experience-role">Web Development Intern</p>
+            <p>
+              Open to internship opportunities where I can learn from experienced developers,
+              contribute to team projects, and grow my skills in a professional environment.
+            </p>
+            <a href="#contact" class="btn btn-outline btn-sm">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">06. Contact</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-wrapper reveal">
+          <p class="contact-intro">
+            I'm currently open to internships and junior web developer roles.
+            Feel free to reach out — I'd love to connect!
+          </p>
+          <div class="contact-grid">
+            <a href="mailto:pjayul501@gmail.com" class="glass-card contact-card">
+              <i class="fas fa-envelope"></i>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">pjayul501@gmail.com</span>
+            </a>
+            <a href="tel:+910000000000" class="glass-card contact-card">
+              <i class="fas fa-phone"></i>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 XXXXX XXXXX</span>
+            </a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="glass-card contact-card">
+              <i class="fab fa-github"></i>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/jayulpatel</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="glass-card contact-card">
+              <i class="fab fa-linkedin"></i>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/jayulpatel</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">&copy; 2025 Jayul Patel. Built with HTML, CSS &amp; JavaScript.</p>
+      <div class="footer-social">
+        <a href="mailto:pjayul501@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
